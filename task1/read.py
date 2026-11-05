@@ -17,7 +17,3 @@ if __name__ == '__main__':
 
     print('* ' * 20)
 
-    stmt = select(Category).where(Category.id > 1)
-
-    for obj in session.scalars(stmt):
-        print(obj, obj.description)
